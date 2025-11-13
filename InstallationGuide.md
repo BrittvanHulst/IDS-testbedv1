@@ -34,7 +34,7 @@ Follow this section to automatically launch the Preconfigured set up of the Test
 ### Setting up requirements
 
 The software required for the successful deployment of the testbed is the following:
-- OS: Ubuntu 20.04.1 LTS
+- OS: Ubuntu 22.04.5 LTS
 - Docker: 20.10.7
 - Docker-compose: 1.27.4
 
@@ -49,9 +49,9 @@ the output should be similar to this
 ```
 No LSB modules are available.
 Distributor ID: Ubuntu
-Description:    Ubuntu 20.04 LTS
-Release:        20.04
-Codename:       focal
+Description:    Ubuntu 22.04.5 LTS
+Release:        22.04
+Codename:       jammy
 ```
 
 Then update your system with
