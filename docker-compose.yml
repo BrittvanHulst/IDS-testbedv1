@@ -17,7 +17,7 @@ services:
       - local
 
   omejdn-server:
-    image: ghcr.io/fraunhofer-aisec/omejdn-server:${OMEJDN_VERSION}
+    image: idstestbed/omejdn-server:1.6.0
     container_name: omejdn-server
     environment:
       - OMEJDN_ISSUER=${OMEJDN_ISSUER}
@@ -34,7 +34,7 @@ services:
       - local
 
   omejdn-ui:
-    image: ghcr.io/fraunhofer-aisec/omejdn-ui:${UI_VERSION}
+    image: idstestbed/omejdn-ui:dev
     container_name: omejdn-ui
     environment:
       - OIDC_ISSUER=${OMEJDN_ISSUER}
@@ -73,7 +73,7 @@ services:
       - local
       
   connectora:
-    image: ghcr.io/international-data-spaces-association/dataspace-connector:8.0.2
+    image: idstestbed/dataspace-connector:8.0.2
     container_name: connectora
     ports:
       - 8080:8080
@@ -106,7 +106,7 @@ services:
       - postgresa
       
   connectorb:
-    image: ghcr.io/international-data-spaces-association/dataspace-connector:8.0.2
+    image: idstestbed/dataspace-connector:8.0.2
     container_name: connectorb
     ports:
       - 8081:8081
