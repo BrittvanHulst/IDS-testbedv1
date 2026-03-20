@@ -165,7 +165,7 @@ The software required for the successful deployment of the testbed is the follow
 First, verify your ubuntu version
 
 ```
-$lsb_release -a
+lsb_release -a
 ```
 
 the output should be similar to this
